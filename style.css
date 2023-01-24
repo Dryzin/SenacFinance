@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 
 
@@ -71,16 +70,21 @@ div img{
     width: 100%;
 }
 
+.formulario input{
+    color: black;
+}
+
 .formulario { 
 
     font-family: 'Poppins','Fira Sans', sans-serif;
     max-width: 480px;
+    min-width: 240px;
     overflow: hidden ; 
-    margin: 50px auto; 
-    border-radius: 3px; 
+    border-radius: 3p x; 
     padding: 1em; 
   
 }
+
 
 .formulario .title { 
 
@@ -104,12 +108,13 @@ div img{
 
 }
 
+
 .formulario .label span { 
 
   width: 100%; 
   float: left;
   color: #ffffff;
-  margin-bottom: 3px; 
+  margin-bottom: 15px; 
 
 }
 
@@ -119,43 +124,36 @@ div img{
   font-size: 16px;
   border-radius: 3px;
   line-height: 20px;
-  background-color: transparent;
-
+  background-color: #ffffff;
+  margin-bottom: 15px;
   transition: all 0.3s;
   padding: 11px;
   width: 100%;
   box-sizing: border-box;
   outline: 0;
+  border: none;
 
 }
 
 .formulario .campo:focus { 
 
-    color: #ffffff;
-}
-
-.formulario textarea {
-  
-  height: 130px;
-  line-height: 130%;
-  resize:vertical;
-
+    color: #9900ff;
 }
 
 .formulario .botao {
 
-  font-family: 'open_sansregular';
+  font-family: 'Poppins','Fira Sans', sans-serif;
   width: 100%;
   background:#6200ff;
   color: #ffffff;
-  border-radius:5px;
+  border-radius: 20px;
   border:0;
   cursor:pointer;
   font-size:22px;
   padding-top:10px;
   padding-bottom:10px;
   transition: all 0.3s;
-  margin-top:-4px;
+  margin-top: 30px;
   font-weight:700;
 
 }
