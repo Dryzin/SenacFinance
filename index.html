@@ -30,41 +30,53 @@
 
         </div>
 
-        <form class="formulario" method="post" action="enviaEmail.php">
+        <div class="logos">
+            <img src="imagens/logos.png" alt="logos parceiros">
+        </div>
+
+        <div class="flex-container" id="quem-somos">
+
+            <form class="formulario" method="post" action="enviaEmail.php">
+
+                 <label class="label">
+                     <span>Nome</span>
+                     <input type="text" name="nome" class="campo" placeholder="Digite seu nome" required=""/>
+                 </label>
+
+                 <label class="label">
+                     <span>E-mail</span>
+                     <input type="email" name="email" class="campo" placeholder="Digite seu e-mail" required=""/>
+                 </label>
              
-             <label class="label">
-                 <span>Nome</span>
-                 <input type="text" name="nome" class="campo" placeholder="Digite seu nome" required=""/>
-             </label>
+                 <label class="label">
+                    <span>CPF</span>
+                    <input type="cpf" name="cpf" class="campo" placeholder="Digite seu CPF" required=""/>
+                </label>
+
+                 <label class="label">
+                     <span>Telefone</span>
+                     <input type="tel" name="telefone" class="campo" placeholder="Digite seu telefone" required=""/>   
+                 </label>
              
-             <label class="label">
-                 <span>E-mail</span>
-                 <input type="email" name="email" class="campo" placeholder="Digite seu e-mail" required=""/>
-             </label>
-         
-             <label class="label">
-                <span>CPF</span>
-                <input type="cpf" name="cpf" class="campo" placeholder="Digite seu CPF" required=""/>
-            </label>
              
-             <label class="label">
-                 <span>Telefone</span>
-                 <input type="tel" name="telefone" class="campo" placeholder="Digite seu telefone" required=""/>   
-             </label>
-         
-         
-             <label class="naoexibir">
-                 <span>Não preencher:</span><br>
-                 <input type="text" name="url" value=""></p>
-             </label> 
-             
-             <label class="label"> 
-                 
-                 <input type="hidden" name="acao" value="enviar"> 
-                 <button type="submit" class="botao"> Cadastrar </button>
-            
-             </label>
-        </form>
+                 <label class="naoexibir">
+                     <span>Não preencher:</span><br>
+                     <input type="text" name="url" value=""></p>
+                 </label> 
+
+                 <label class="label"> 
+
+                     <input type="hidden" name="acao" value="enviar"> 
+                     <button type="submit" class="botao"> Cadastrar </button>
+                
+                 </label>
+            </form>
+
+            <div class="info_c">
+                <img src="imagens/info_card.png" alt="informações do cartão">
+            </div>
+
+        </div>
     
 </body>
 </html>

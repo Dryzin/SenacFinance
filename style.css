@@ -164,6 +164,25 @@ div img{
 .naoexibir { display:none; }
 
 
+#quem-somos{
+    padding-right: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quem-somos img{
+    min-width: 40%;
+    max-width: 70%;
+    margin-left: 30%;
+}
+
+.logos{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 45%;
+    margin: 0 auto;
+}
+
 /*mobile*/
 @media(max-width: 992px){
 
@@ -187,6 +206,10 @@ div img{
     .apresentacao .texto-apresentacao{
         min-height: 300px;
         width: 80%;
+    }
+
+    .logos{
+        min-width: 70%;
     }
 
 }
