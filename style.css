@@ -41,12 +41,25 @@ div img{
 }
 
 .texto-apresentacao h1{
+    
+    background-image: linear-gradient(to bottom, rgba(145, 48, 244, 1), rgba(70, 70, 249, 1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    font-size: 74px;
+    font-size: 78px;
     margin-bottom: 30px;
+    
 }
 
+
+.btn {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 4px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    font-family: 'Poppins','Fira Sans';
+}
 
 .texto-apresentacao a{
 
@@ -59,10 +72,8 @@ div img{
     line-height: 50px;
     margin-top: 30px;
     margin-bottom: 10px;
-    border: 2px solid rgba(204, 204, 204, 0.13);
-    font-family: 'Poppins','Fira Sans',;
+    font-family: 'Poppins','Fira Sans';
     
-    background-image: linear-gradient(to bottom, rgba(119, 0, 255, 0.479), rgba(76, 0, 255, 0.342));
 }
 
 .texto-apresentacao img{
@@ -177,11 +188,12 @@ div img{
 }
 
 .logos{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 30px;
     max-width: 45%;
     margin: 0 auto;
 }
+
 
 /*mobile*/
 @media(max-width: 992px){
