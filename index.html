@@ -11,20 +11,6 @@
 <body>
 
     <header>
-
-        <script>
-            function formatar(mascara, documento){
-              var i = documento.value.length;
-              var saida = mascara.substring(0,1);
-              var texto = mascara.substring(i)
-              
-              if (texto.substring(0,1) != saida){
-                        documento.value += texto.substring(0,1);
-              }
-              
-            }
-            </script>
-
         <div class="flex-container menu">
             <div><img src="imagens/logo.png" alt="logo do banco"></div>
         </div>
@@ -54,22 +40,22 @@
 
                  <label class="label">
                      <span>Nome</span>
-                     <input type="text" name="nome" class="campo" placeholder="Digite seu nome" required=""/>
+                     <input type="text" id="nome" class="campo" placeholder="Digite seu nome" required=""/>
                  </label>
 
                  <label class="label">
                      <span>E-mail</span>
-                     <input type="email" name="email" class="campo" placeholder="Digite seu e-mail" required=""/>
+                     <input type="email" id="email" class="campo" placeholder="Digite seu e-mail" required=""/>
                  </label>
              
                  <label class="label">
                     <span>CPF</span>
-                    <input type="cpf" name="cpf" class="campo" placeholder="Digite seu CPF" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)" required=""/>
+                    <input type="cpf" id="cpf" class="campo" placeholder="Digite seu CPF" minlength="14" maxlength="14"/>
                 </label>
 
                  <label class="label">
                      <span>Telefone</span>
-                     <input type="tel" name="telefone" class="campo" placeholder="Digite seu telefone" maxlength="12" OnKeyPress="formatar('##-#####-####', this)" required=""/>   
+                     <input type="tel" id="tel" class="campo" placeholder="Digite seu telefone" minlength="14" maxlength="14"/>   
                  </label>
              
              
@@ -92,7 +78,22 @@
 
         </div>
 
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
         
+
+        <script>
+
+            $("#nome").on("input", function(){
+                var regexp = /[^a-zA-Z-" "]/g;
+                if(this.value.match(regexp)){
+                $(this).val(this.value.replace(regexp,''));
+              }
+            });
+            $('#tel').mask('(00) 00000-0000');
+            $('#cpf').mask('000.000.000-00');
+        </script>
     
 </body>
 </html>
