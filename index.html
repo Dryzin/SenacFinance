@@ -11,6 +11,20 @@
 <body>
 
     <header>
+
+        <script>
+            function formatar(mascara, documento){
+              var i = documento.value.length;
+              var saida = mascara.substring(0,1);
+              var texto = mascara.substring(i)
+              
+              if (texto.substring(0,1) != saida){
+                        documento.value += texto.substring(0,1);
+              }
+              
+            }
+            </script>
+
         <div class="flex-container menu">
             <div><img src="imagens/logo.png" alt="logo do banco"></div>
         </div>
@@ -50,12 +64,12 @@
              
                  <label class="label">
                     <span>CPF</span>
-                    <input type="cpf" name="cpf" class="campo" placeholder="Digite seu CPF" required=""/>
+                    <input type="cpf" name="cpf" class="campo" placeholder="Digite seu CPF" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)" required=""/>
                 </label>
 
                  <label class="label">
                      <span>Telefone</span>
-                     <input type="tel" name="telefone" class="campo" placeholder="Digite seu telefone" required=""/>   
+                     <input type="tel" name="telefone" class="campo" placeholder="Digite seu telefone" maxlength="12" OnKeyPress="formatar('##-#####-####', this)" required=""/>   
                  </label>
              
              
