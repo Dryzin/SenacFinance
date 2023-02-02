@@ -26,6 +26,7 @@ div img{
     width: 100%;
 }
 
+
 .apresentacao{
     font-family: 'Poppins','Fira Sans';
     font-size: 16px;
@@ -222,6 +223,12 @@ div img{
 
     .logos{
         min-width: 70%;
+    }
+
+    .info_c{
+        padding-right: 15%;
+        align-self: center;
+        min-width: 110%;
     }
 
 }
